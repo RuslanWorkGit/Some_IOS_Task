@@ -13,7 +13,30 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .link
         
+    }
+    
+    @IBAction func didTapButton() {
+        
+        //let vc = FirstViewController()
+        
+        
+//        let vc = storyboard?.instantiateViewController(withIdentifier: "FirstViewController")
+//
+//        guard let nextSt = vc else {
+//            print("nil")
+//            return
+//        }
+//        present(nextSt, animated: true)
+        
+        
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "FirstViewController") as? FirstViewController else{
+            print("")
+            return
+        }
+    
+        present(vc, animated: true)
     }
     
     override func viewDidLayoutSubviews() {
