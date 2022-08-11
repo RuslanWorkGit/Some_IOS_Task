@@ -101,7 +101,7 @@ class ViewController: UIViewController {
     
     private func updateLabels() {
      
-            frameX.text = "frame x = \(Int(myImage.frame.origin.x))"
+        frameX.text = "frame x = \(Int(myImage.frame.origin.x))"
             frameY.text = "frame y = \(Int(myImage.frame.origin.y))"
             frameWidth.text = "frame width = \(Int(myImage.frame.width))"
             frameHeight.text = "frame height = \(Int(myImage.frame.height))"
