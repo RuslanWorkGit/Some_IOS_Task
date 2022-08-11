@@ -17,6 +17,14 @@ class FirstViewController: UIViewController {
         view.backgroundColor = .systemGreen
     }
     
+    @IBAction func didTapButton(_ sender: Any) {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "SecondViewController") as? SecondViewController else {
+            print("nil")
+            return
+        }
+        
+        present(vc, animated: true)
+    }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         

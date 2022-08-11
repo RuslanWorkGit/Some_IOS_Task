@@ -57,13 +57,56 @@
                     <view key="view" contentMode="scaleToFill" id="zO5-b9-gXW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bnb-vr-LUC">
+                                <rect key="frame" x="82" y="120.5" width="250" height="40"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="2iD-MF-HPM"/>
+                                    <constraint firstAttribute="width" constant="250" id="eXi-Kr-eSG"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Move to next controller">
+                                            <attributes>
+                                                <font key="NSFont" size="18" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="didTapButton:" destination="cBt-FB-ZhK" eventType="touchUpInside" id="YXW-fF-nas"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dn7-xN-jyW"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Bnb-vr-LUC" firstAttribute="centerX" secondItem="zO5-b9-gXW" secondAttribute="centerX" id="3om-gk-Rsf"/>
+                            <constraint firstItem="Bnb-vr-LUC" firstAttribute="centerY" secondItem="zO5-b9-gXW" secondAttribute="centerY" constant="-307.5" id="mAp-DG-mrt"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wZh-gY-FNw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1071" y="70"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="QcP-KL-b3D">
+            <objects>
+                <viewController storyboardIdentifier="SecondViewController" id="OkS-bA-bab" customClass="SecondViewController" customModule="BasicAnimation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ndj-zF-wXl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Wrd-H4-R6O"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Szx-BE-DTi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2043" y="72"/>
         </scene>
     </scenes>
     <resources>
