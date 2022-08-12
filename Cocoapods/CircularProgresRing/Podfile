@@ -7,5 +7,6 @@ target 'CircularProgresRing' do
 
   # Pods for CircularProgresRing
 	pod 'UICircularProgressRing', '~> 8.0'
+	pod 'NVActivityIndicatorView'
 
 end

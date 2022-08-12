@@ -1,16 +1,22 @@
 PODS:
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
   - UICircularProgressRing (8.0.0)
 
 DEPENDENCIES:
+  - NVActivityIndicatorView
   - UICircularProgressRing (~> 8.0)
 
 SPEC REPOS:
   trunk:
+    - NVActivityIndicatorView
     - UICircularProgressRing
 
 SPEC CHECKSUMS:
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
   UICircularProgressRing: 19927375b2b21b5fa5fd9582f15ccdef9659da16
 
-PODFILE CHECKSUM: e1849e0908c994d1d20d81c8d0ad7c7ef6ab2b6a
+PODFILE CHECKSUM: a0e3a36097b11d5d93b7fb8f99ac44d6b21c0333
 
 COCOAPODS: 1.11.3

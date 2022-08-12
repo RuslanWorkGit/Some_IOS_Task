@@ -7,14 +7,26 @@
 
 import UIKit
 import UICircularProgressRing
+import NVActivityIndicatorView
 
 class ViewController: UIViewController {
     
-
+    @IBOutlet weak var indicatorView: NVActivityIndicatorView!
+    
+    @IBOutlet weak var secondIndecatorView: NVActivityIndicatorView!
     override func viewDidLoad() {
         super.viewDidLoad()
         addRing()
         addAnoutherRing()
+        indicatorView.type = .pacman
+        indicatorView.color = .systemGreen
+        indicatorView.startAnimating()
+        
+        secondIndecatorView.type = .ballScaleRippleMultiple
+        secondIndecatorView.color = .orange
+        secondIndecatorView.startAnimating()
+        
+     
         // Do any additional setup after loading the view.
     }
     
